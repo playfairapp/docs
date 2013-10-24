@@ -1,3 +1,4 @@
 name: Playfair Docs
 markdown: redcarpet
 pygments: true
+baseurl: /docs
