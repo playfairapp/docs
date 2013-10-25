@@ -10,34 +10,43 @@
         <link rel="stylesheet" href="/css/syntax.css">
 
         <!-- Custom CSS -->
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Playfair+Display:400italic" rel="stylesheet" type="text/css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" rel="stylesheet">
         <link rel="stylesheet" href="{{ site.baseurl }}/css/layout.css">
 
     </head>
     <body>
 
-      <nav class="top-bar">
-        <ul class="title-area">
-          <li class="name">
-            <h1><a href="/">{{ site.name }}</a></h1>
-          </li>
-          <li class="toggle-topbar menu-icon">
-            <a href="#"><span>Menu</span></a>
-          </li>
-        </ul>
-
-        <section class="top-bar-section">
-          <ul class="left">
-            <li class="divider"></li>
-            <!-- <li><a href="#">Some</a></li> -->
-            <!-- <li><a href="#">links</a></li> -->
+      <div class="fixed">
+        <nav class="top-bar">
+          <ul class="title-area">
+            <li class="name">
+              <h1>
+                <a href="/">
+                  <i class="fa fa-cloud"></i>
+                  {{ site.name }}
+                </a>
+              </h1>
+            </li>
+            <li class="toggle-topbar menu-icon">
+              <a href="#"><span>Menu</span></a>
+            </li>
           </ul>
-        </section>
-      </nav>
 
-      <div class="row">
-        <div class="large-12 columns">
-          {{ content }}
+          <section class="top-bar-section">
+            <ul class="left">
+              <!-- <li><a href="#">Some</a></li> -->
+              <!-- <li><a href="#">links</a></li> -->
+            </ul>
+          </section>
+        </nav>
+      </div>
+
+      <div class="content">
+        <div class="row">
+          <div class="large-12 columns">
+            {{ content }}
+          </div>
         </div>
       </div>
     </body>
