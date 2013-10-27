@@ -3,15 +3,23 @@ layout: default
 title: Playfair Docs
 ---
 
-<h1 class="subheader">Blog Posts</h1>
-{% for post in site.posts %}
-  <div class="post-wrapper">
-    <p class="meta">{{ post.date | date_to_string }}</p>
-    <h2 class="title">
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </h2>
-    <p class="summary">
-      {{ post.excerpt }}
-    </p>
-  </div>
-{% endfor %}
+<h1 class="subheader">Documentation</h1>
+
+<h3 class="subheader">Getting Started</h3>
+<p>
+  <ul>
+    <li><a href="/getting-started/create.html">Create a Graphite and StatsD instance.</a></li>
+    <li><a href="/getting-started/send.html">Send some data.</a></li>
+    <li><a href="/getting-started/watch.html">Watch the data.</a></li>
+  </ul>
+</p>
+
+<!-- <h3 class="subheader">How To</h3> -->
+<!-- <p> -->
+<!--   This is for common how to articles. -->
+<!-- </p> -->
+
+<!-- <h3 class="subheader">Reference</h3> -->
+<!-- <p> -->
+<!--   This is good reference material. -->
+<!-- </p> -->
