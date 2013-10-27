@@ -4,3 +4,8 @@
   line-height: 6.0em;
   font-size: 0.8em;
 }
+
+h2.post-header
+{
+  margin-top: 0;
+}
